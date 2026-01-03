@@ -8,6 +8,7 @@ variable "bucket_name" {
   type = string
   default = "benadhen-terraform-bucket12345"
 }
+#example of number, bool variables
 variable "instance_count" {
   description = "Number of EC2 instances"
   type = number
@@ -23,6 +24,7 @@ variable "associate_public_ip_address" {
   type = bool
   default = true
 }
+#example of list, map, tuple, object variables
 variable "cidr_block" {
   description = "CIDR block for the VPC"
   type = list(string)
