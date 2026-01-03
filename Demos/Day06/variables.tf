@@ -57,6 +57,7 @@ variable "ingress_values" {
 variable "configs" {
   type = object({
     instance_count = number
+    region         = string
      
   })
   default = {
