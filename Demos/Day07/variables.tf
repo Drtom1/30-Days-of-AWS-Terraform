@@ -74,3 +74,15 @@ variable "configs" {
     region = "us-east-1"
   }
 }
+variable "bucket_names" {
+  description = "Set of S3 bucket names to create"
+  type = list(string)
+  default = ["benadhen-terraform-bucketA", "benadhen-terraform-bucketB", "benadhen-terraform-bucketC"]
+  
+}
+variable "bucket_names_set" {
+  description = "Set of S3 bucket names to create"
+  type = set(string)
+  default = ["benadhen-terraform-bucketX", "benadhen-terraform-bucketY", "benadhen-terraform-bucketZ"]
+  
+}
