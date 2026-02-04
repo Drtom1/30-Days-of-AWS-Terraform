@@ -71,8 +71,6 @@ resource "aws_s3_object" "website_files" {
   }, split(".", each.value)[length(split(".", each.value)) - 1], "application/octet-stream")
 }
 
-
-
 # CloudFront Distribution
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
